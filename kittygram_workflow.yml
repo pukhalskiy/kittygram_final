@@ -119,11 +119,11 @@ jobs:
           tags: perineum/kittygram_gateway:latest
   deploy:
       runs-on: ubuntu-latest
-      if: github.ref == 'refs/heads/branch'
       needs: 
         - build_and_push_to_docker_hub
         - build_frontend_and_push_to_docker_hub
         - build_gateway_and_push_to_docker_hub
+      if: github.ref == 'refs/heads/branch'
       steps:
       - name: Checkout repo
         uses: actions/checkout@v3
