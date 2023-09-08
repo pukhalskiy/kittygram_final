@@ -118,8 +118,8 @@ jobs:
           push: true
           tags: perineum/kittygram_gateway:latest
   deploy:
-      if: github.ref == 'refs/heads/branch'
       runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/branch'
       needs: 
         - build_and_push_to_docker_hub
         - build_frontend_and_push_to_docker_hub
