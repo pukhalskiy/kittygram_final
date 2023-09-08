@@ -48,4 +48,4 @@ https://github.com/perineum14/infra_sprint1
 ## Об авторе 
 Егор Пухальский, начинающий Python-разработчик.
 
-https://github.com/perineum14/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main
+[![Build Status](https://github.com/perineum14/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)]
